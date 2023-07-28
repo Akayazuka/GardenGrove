@@ -1,16 +1,15 @@
-import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
-import Shop from "../Shop/shop";
-import Main from '../Index/Main';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+    const navigate = useNavigate();
     return (
-        <Router>
             <header class="p-3 text-bg-dark sticky-top">
                 <div class="container">
                     <div class="d-flex flex-wrap align-items-center justify-content-between">
 
                         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                                <Link to="/index" class="navbar-brand mb-0 h1">Vegetable Market
+                            <Link to="/index" class="navbar-brand mb-0 h1">Vegetable Market
                                 Logs</Link>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -38,23 +37,19 @@ function Header() {
                         <ul class="nav col-auto">
                             <li class="nav-item">
                                 <button type="button" class="btn btn-outline-light me-2"
-                                    >Login</button>
+                                onClick={() => navigate("/login")}
+                                >Login</button>
                             </li>
                             <li class="nav-item">
                                 <button type="button" class="btn btn-warning"
-                                    >Sign-up</button>
+                                onClick={() => navigate("/register")}
+                                >Sign-up</button>
                             </li>
                         </ul>
 
                     </div>
                 </div>
             </header>
-            <Routes>
-                <Route path='/' element={< Main />}></Route>
-                <Route exact path='/index' element={< Main />}></Route>
-                <Route exact path='/shop' element={< Shop />}></Route>
-            </Routes>
-        </Router>
     );
 }
 

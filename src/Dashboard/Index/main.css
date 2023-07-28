@@ -16,12 +16,12 @@
     --br-81xl: 100px;
 }
 
-.carousel-item {
+.main .carousel-item {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.carousel-item.active {
+.main .carousel-item.active {
     opacity: 1;
 }
 
@@ -34,14 +34,14 @@
 }
 
 /* Custom CSS for carousel */
-.carousel-item img {
+.main .carousel-item img {
     object-fit: cover;
     width: 100%;
     height: calc(100vh - 56px);
     /* Subtracting the header height from the viewport height */
 }
 
-.carousel-text {
+.main .carousel-text {
     position: absolute;
     text-align: start;
     margin-top: 60px;
@@ -56,7 +56,77 @@
 }
 
 /* CSS */
-.button-17 {
+.main .button-17 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: var(--font-alike-angular);
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 190px;
+    will-change: transform, opacity;
+    z-index: 0;
+    margin-right: 15px;
+}
+
+.main .button-17:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+}
+
+.main .button-17:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.main .button-17:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+}
+
+.main .button-17:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.main .button-17:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.main .button-17:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.main .button-17:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.main .button-17:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.main .button-18 {
     align-items: center;
     appearance: none;
     background-color: #fff;
@@ -90,116 +160,47 @@
     z-index: 0;
 }
 
-.button-17:hover {
+.main .button-18:hover {
     background: #F6F9FE;
     color: #174ea6;
 }
 
-.button-17:active {
+.main .button-18:active {
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
     outline: none;
 }
 
-.button-17:focus {
+.main .button-18:focus {
     outline: none;
     border: 2px solid #4285f4;
 }
 
-.button-17:not(:disabled) {
+.main .button-18:not(:disabled) {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
-.button-17:not(:disabled):hover {
+.main .button-18:not(:disabled):hover {
     box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
 }
 
-.button-17:not(:disabled):focus {
+.main .button-18:not(:disabled):focus {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
-.button-17:not(:disabled):active {
+.main .button-18:not(:disabled):active {
     box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
 }
 
-.button-17:disabled {
+.main .button-18:disabled {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
-.button-18 {
-    align-items: center;
-    appearance: none;
-    background-color: #fff;
-    border-radius: 24px;
-    border-style: none;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
-    box-sizing: border-box;
-    color: #3c4043;
-    cursor: pointer;
-    display: inline-flex;
-    fill: currentcolor;
-    font-family: var(--font-alike-angular);
-    font-size: 14px;
-    font-weight: 500;
-    height: 48px;
-    justify-content: center;
-    letter-spacing: .25px;
-    line-height: normal;
-    max-width: 100%;
-    overflow: visible;
-    padding: 2px 24px;
-    position: relative;
-    text-align: center;
-    text-transform: none;
-    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 190px;
-    will-change: transform, opacity;
-    z-index: 0;
-}
-
-.button-18:hover {
-    background: #F6F9FE;
-    color: #174ea6;
-}
-
-.button-18:active {
-    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
-    outline: none;
-}
-
-.button-18:focus {
-    outline: none;
-    border: 2px solid #4285f4;
-}
-
-.button-18:not(:disabled) {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-}
-
-.button-18:not(:disabled):hover {
-    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
-}
-
-.button-18:not(:disabled):focus {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-}
-
-.button-18:not(:disabled):active {
-    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
-}
-
-.button-18:disabled {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-}
-
-.sec2 {
+.main .sec2 {
     width: 100%;
     height: 100vh;
 }
 
-.sec2-bg {
+.main .sec2-bg {
     background-image: url("images/pexels-vanessa-loring-5965658.jpg");
     background-size: cover;
     background-position: center;
@@ -208,34 +209,34 @@
     height: 100vh;
 }
 
-.sec2 .grid-container {
+.main .sec2 .grid-container {
     display: grid;
     height: 100%;
     grid-template-columns: 60% 40%;
 }
 
 /* Background image in the first grid area */
-.sec2 .grid-item1 {
+.main .sec2 .grid-item1 {
     background-image: url("images/pexels-vanessa-loring-5965658.jpg");
     background-size: cover;
     background-position: center;
 }
 
 /* Styling for the text in the second grid area */
-.sec2 .grid-item2 {
+.main .sec2 .grid-item2 {
     background-color: #edddcd;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sec2-item2 {
+.main .sec2-item2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.sec2-text {
+.main .sec2-text {
     position: relative;
     text-align: end;
     z-index: 1;
@@ -246,12 +247,12 @@
     margin-left: 30px;
 }
 
-.sec2-item2 button {
+.main .sec2-item2 button {
     margin-top: 30px;
     margin-right: 160px;
 }
 
-.button-24 {
+.main .button-24 {
     width: 150px;
     height: 50px;
     background: #FF4742;
@@ -278,18 +279,18 @@
     vertical-align: middle;
 }
 
-.button-24:hover,
-.button-24:active {
+.main .button-24:hover,
+.main .button-24:active {
     background-color: initial;
     background-position: 0 0;
     color: #FF4742;
 }
 
-.button-24:active {
+.main .button-24:active {
     opacity: .5;
 }
 
-.sc-ee301021-6 {
+.main .sc-ee301021-6 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-family: "Work Sans", sans-serif;
@@ -309,7 +310,7 @@
     border-radius: 8px;
 }
 
-.sc-ee301021-7 {
+.main .sc-ee301021-7 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-weight: normal;
@@ -328,7 +329,7 @@
     margin: auto;
 }
 
-.sc-ee301021-4 {
+.main .sc-ee301021-4 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-family: "Work Sans", sans-serif;
@@ -345,7 +346,7 @@
     padding: 12px 0px;
 }
 
-.sc-ee301021-9 {
+.main .sc-ee301021-9 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-family: "Work Sans", sans-serif;
@@ -361,7 +362,7 @@
     color: rgb(84, 84, 84);
 }
 
-.sec3 {
+.main .sec3 {
     width: 100%;
     height: 100vh;
     background-color: #faf3ef;
@@ -370,14 +371,14 @@
     justify-content: center;
 }
 
-.sec3-text {
+.main .sec3-text {
     font-size: 50px;
     text-align: center;
     font-family: "DM Serif Display", serif;
     margin-top: 60px;
 }
 
-.sec3 .grid-container {
+.main .sec3 .grid-container {
     position: relative;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -388,7 +389,7 @@
     align-items: center;
 }
 
-.sec3 .grid-item {
+.main .sec3 .grid-item {
     align-self: center;
     background-color: inherit;
     margin-left: 30px;
@@ -399,7 +400,7 @@
     background-color: #faf3ef;
 }
 
-.sc-c5eaa547-0 {
+.main .sc-c5eaa547-0 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-family: "Work Sans", sans-serif;
@@ -416,9 +417,7 @@
     background-color: #faf3ef;
 }
 
-
-
-.sc-c5eaa547-1 {
+.main .sc-c5eaa547-1 {
     align-self: center;
     text-align: center;
     text-size-adjust: 100%;
@@ -438,7 +437,7 @@
 
 }
 
-.sc-c5eaa547-2 {
+.main .sc-c5eaa547-2 {
     text-size-adjust: 100%;
     --app-height: 100%;
     color: rgb(51, 51, 51);
@@ -455,7 +454,7 @@
     margin: 8px 0px 4px;
 }
 
-.sc-c5eaa547-3 {
+.main .sc-c5eaa547-3 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-family: "Work Sans", sans-serif;
@@ -471,7 +470,7 @@
     margin: 4px 0px;
 }
 
-.sc-c5eaa547-4 {
+.main .sc-c5eaa547-4 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-family: "Work Sans", sans-serif;
@@ -488,12 +487,12 @@
     max-width: 214px;
 }
 
-.div-but25 {
+.main .div-but25 {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.button-25 {
+.main .button-25 {
     width: 200px;
     height: 50px;
     background: #FF4742;
@@ -520,18 +519,18 @@
     vertical-align: middle;
 }
 
-.button-25:hover,
-.button-25:active {
+.main .button-25:hover,
+.main .button-25:active {
     background-color: initial;
     background-position: 0 0;
     color: #FF4742;
 }
 
-.button-25:active {
+.main .button-25:active {
     opacity: .5;
 }
 
-.sec4 {
+.main .sec4 {
     width: 100%;
     height: 100vh;
     background-color: #d1fce2;
@@ -541,14 +540,14 @@
     text-align: center;
 }
 
-.sec-4-headline {
+.main .sec-4-headline {
     font-size: 50px;
     text-align: center;
     font-family: "DM Serif Display", serif;
     margin-top: 60px;
 }
 
-.sc-4e67e03b-2 {
+.main .sc-4e67e03b-2 {
     margin-top: 50px;
     position: relative;
     text-size-adjust: 100%;
@@ -567,7 +566,7 @@
     padding: 40px 0px;
 }
 
-.sc-4e67e03b-3 {
+.main .sc-4e67e03b-3 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-family: "Work Sans", sans-serif;
@@ -587,7 +586,7 @@
     align-items: center;
 }
 
-.sc-4e67e03b-6 {
+.main .sc-4e67e03b-6 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-weight: normal;
@@ -602,7 +601,7 @@
     font-family: "DM Serif Display", serif;
 }
 
-.sc-4e67e03b-4 {
+.main .sc-4e67e03b-4 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-weight: normal;
@@ -619,7 +618,7 @@
     text-align: center;
 }
 
-.sc-4e67e03b-5 {
+.main .sc-4e67e03b-5 {
     text-size-adjust: 100%;
     --app-height: 100%;
     font-family: "Work Sans", sans-serif;
@@ -637,13 +636,13 @@
     max-width: 342px;
 }
 
-.div-but26 {
+.main .div-but26 {
     margin-top: 50px;
     position: relative;
     justify-content: center;
 }
 
-.button-26 {
+.main .button-26 {
 
     width: 200px;
     height: 50px;
@@ -671,42 +670,42 @@
     vertical-align: middle;
 }
 
-.button-26:hover,
-.button-26:active {
+.main .button-26:hover,
+.main .button-26:active {
     background-color: initial;
     background-position: 0 0;
     color: #FF4742;
 }
 
-.button-26:active {
+.main .button-26:active {
     opacity: .5;
 }
 
-.sec5 {
+.main .sec5 {
     width: 100%;
     height: 100vh;
 }
 
-.sec5 .grid-container {
+.main .sec5 .grid-container {
     display: grid;
     height: 100%;
     grid-template-columns: 60% 40%;
 }
 
 /* Styling for the text in the second grid area */
-.sec5 .grid-item1 {
+.main .sec5 .grid-item1 {
     background-color: #edddcd;
     justify-content: left;
 }
 
 /* Background image in the first grid area */
-.sec5 .grid-item2 {
+.main .sec5 .grid-item2 {
     background-image: url("images/pexels-rfstudio-3621225.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.sec5-headline {
+.main .sec5-headline {
     margin-top: 100px;
     margin-left: 170px;
     position: relative;
@@ -718,7 +717,7 @@
     color: rgb(46, 10, 5);
 }
 
-.sec5-desc {
+.main .sec5-desc {
     position: relative;
     text-align: left;
     margin-top: 20px;
@@ -731,14 +730,14 @@
     line-height: 2.5rem;
 }
 
-.sec5-list-wrap {
+.main .sec5-list-wrap {
     position: relative;
     text-align: left;
     margin-left: 170px;
     z-index: 1;
 }
 
-.sec5-list-head {
+.main .sec5-list-head {
     position: relative;
     text-align: left;
     z-index: 1;
@@ -746,30 +745,30 @@
     font-family: "DM Serif Display", serif;
 }
 
-.sec5-list {
+.main .sec5-list {
     font-size: 18px;
     font-family: "Work Sans", sans-serif;
 }
 
-.tick-list {
+.main .tick-list {
     list-style: none;
     /* Set the list style to 'disc' for solid ticks */
 }
 
-.sec5-after-list {
+.main .sec5-after-list {
     margin-top: 20px;
     font-size: 20px;
     font-family: "DM Serif Display", serif;
     line-height: 1.5rem;
 }
 
-.but-x {
+.main .but-x {
     margin-top: 40px;
     position: relative;
     margin-left: 170px;
 }
 
-.sc-232424a1-0 {
+.main .sc-232424a1-0 {
     text-size-adjust: 100%;
     --app-height: 100%;
     -webkit-font-smoothing: antialiased;
@@ -787,7 +786,7 @@
     color: rgb(51, 51, 51) !important;
 }
 
-.sc-iBzEeX {
+.main .sc-iBzEeX {
     text-size-adjust: 100%;
     --app-height: 100%;
     -webkit-font-smoothing: antialiased;
@@ -807,53 +806,53 @@
 
 
 @media (max-width: 768px) {
-    .sec2 .grid-container {
+    .main .sec2 .grid-container {
         grid-template-columns: 100%;
         /* Show only one column when the screen size is reduced */
     }
 
-    .sec2 .grid-item1 {
+    .main .sec2 .grid-item1 {
         display: none;
         /* Hide the first grid item (background image) */
     }
 
-    .carousel-text {
+    .main .carousel-text {
         top: 15%;
         font-size: 50px;
     }
 
-    .sec1-btn {
+    .main .sec1-btn {
         display: grid;
     }
 
-    .sec1-btn button {
+    .main .sec1-btn button {
         margin: 10px;
         padding: 10px;
     }
 
-    .sec2-text {
+    .main .sec2-text {
         margin-right: 10px;
     }
 
-    .sec3 .grid-container {
+    .main .sec3 .grid-container {
         grid-template-columns: auto auto;
         margin-left: 5px;
         margin-right: 5px;
     }
 
-    .sec3 .grid-item {
+    .main .sec3 .grid-item {
         padding: 5px;
     }
 
-    .sec3 {
+    .main .sec3 {
         height: max-content;
     }
 
-    .sec3-text {
+    .main .sec3-text {
         font-size: 30px;
     }
 
-    .sc-4e67e03b-2 {
+    .main .sc-4e67e03b-2 {
         margin-top: 50px;
         position: relative;
         text-size-adjust: 100%;
@@ -872,38 +871,38 @@
         padding: 40px 0px;
     }
 
-    .button-26 {
+    .main .button-26 {
         margin-bottom: 20px;
     }
 
-    .sec4 {
+    .main .sec4 {
         height: fit-content;
     }
 
-    .sec5 .grid-container {
+    .main .sec5 .grid-container {
         grid-template-columns: 100%;
         /* Show only one column when the screen size is reduced */
     }
 
-    .sec5 .grid-item2 {
+    .main .sec5 .grid-item2 {
         display: none;
         /* Hide the first grid item (background image) */
     }
 
-    .sec5-headline {
+    .main .sec5-headline {
         margin-left: 80px;
     }
 
-    .sec5-desc {
+    .main .sec5-desc {
         margin-left: 80px;
         margin-right: 20px;
     }
 
-    .sec5-list-wrap {
+    .main .sec5-list-wrap {
         margin-left: 80px;
     }
 
-    .but-x {
+    .main .but-x {
         margin-left: 80px;
     }
 

@@ -2,14 +2,12 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import React from 'react';
-import Header from './Dashboard/Header/Header';
-import Footer from './Dashboard/Footer/Footer';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Header/>
-      <Footer/>
+    <App/>
   </React.StrictMode>
 );
 

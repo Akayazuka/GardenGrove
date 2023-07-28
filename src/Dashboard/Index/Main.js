@@ -25,7 +25,7 @@ function Main() {
     }, [images.length]);
 
     return (
-        <><div class="sec1">
+        <div class="main"><div class="sec1">
             <div id="myCarousel" className="" data-bs-ride="">
                 <div className="carousel-inner">
                     {images.map((image, index) => (
@@ -382,7 +382,7 @@ function Main() {
             </div>
 
 
-        </>
+        </div>
     );
 }
 
